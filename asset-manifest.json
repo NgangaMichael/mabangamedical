@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/mabangamedical/static/css/main.31d6cfe0.css",
+    "main.js": "/mabangamedical/static/js/main.20235a56.js",
+    "static/js/787.31e74106.chunk.js": "/mabangamedical/static/js/787.31e74106.chunk.js",
+    "index.html": "/mabangamedical/index.html",
+    "main.20235a56.js.map": "/mabangamedical/static/js/main.20235a56.js.map",
+    "787.31e74106.chunk.js.map": "/mabangamedical/static/js/787.31e74106.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.20235a56.js"
+  ]
+}
