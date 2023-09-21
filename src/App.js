@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Dashboard from './components/Dashboard'
+import Lab from './components/Lab'
+import Messages from './components/Messages'
+import Patients from './components/Patients'
+import Pharmacy from './components/Pharmacy'
+import Schedule from './components/Schedule'
+import Notfound from './components/Notfound'
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+      <Navbar />
+        <Routes>
+          <Route exact path='/' element={<Dashboard />} />
+          <Route exact path='/lab' element={<Lab />} />
+          <Route exact path='/messages' element={<Messages />} />
+          <Route exact path='/patients' element={<Patients />} />
+          <Route exact path='/pharmacy' element={<Pharmacy />} />
+          <Route exact path='/schedule' element={<Schedule />} />
+          <Route exact path='*' element={<Notfound />} />
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
-
-export default App;
